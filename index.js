@@ -1,4 +1,6 @@
-// ================= START BOT CODE ===================
+// This bot is designed by 87Ferrets
+// --> Developed by TuxThePenguin#5615 who is a developer for 87Ferrets
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const profaneWords = require('./moderation_assets/profane.json');
