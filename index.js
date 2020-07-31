@@ -17,7 +17,7 @@ for (let i = 0; i < profaneWords.length; i++) {
   const message_split = message.content.split(" ");
   for (let i = 0; i < message_split.length; i++) {
     const word = message_split[i];
-    if (word.toLowerCase().includes(elem)) {
+    if (word.toLowerCase() == elem) {
       message.delete();
       const warning = new Discord.MessageEmbed()
         .setColor('#FF0000')
