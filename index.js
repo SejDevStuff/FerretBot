@@ -27,6 +27,7 @@ for (let i = 0; i < profaneWords.length; i++) {
       return;
     }
   }
+}
 
 });
 
