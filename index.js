@@ -14,13 +14,17 @@ client.on('message', message => {
   }
 for (let i = 0; i < profaneWords.length; i++) {
   const elem = profaneWords[i];
-    if (message.content.toLowerCase().includes(elem)) {
+  const message_split = message.content.split(" ");
+  for (let i = 0; i < message_split.length; i++) {
+    const word = message_split[i];
+    if (word.toLowerCase().includes(elem)) {
       message.delete();
       const warning = new Discord.MessageEmbed()
         .setColor('#FF0000')
         .setTitle('Profanity Detected!')
         .setDescription(`Woah, **${message.author.username}**! This is a family friendly server, don't use that language or you may get muted!`)
       message.channel.send(warning);
+      return;
     }
   }
 
