@@ -1,27 +1,26 @@
 {
-  "name": "ferretbot",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-	"start": "node index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "discord.js": "^12.2.0",
-    "express": "^4.17.1",
-    "express.js": "^1.0.0",
-    "spamnya": "^1.1.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/87FerretsDev/FerretBot.git"
-  },
-  "bugs": {
-    "url": "https://github.com/87FerretsDev/FerretBot/issues"
-  },
-  "homepage": "https://github.com/87FerretsDev/FerretBot#readme",
-  "description": ""
+	"name": "ferretbot",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"discord.js": "^12.2.0",
+		"express": "^4.17.1",
+		"express.js": "^1.0.0",
+		"spamnya": "^1.1.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/87FerretsDev/FerretBot.git"
+	},
+	"bugs": {
+		"url": "https://github.com/87FerretsDev/FerretBot/issues"
+	},
+	"homepage": "https://github.com/87FerretsDev/FerretBot#readme",
+	"description": ""
 }
