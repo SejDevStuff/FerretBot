@@ -17,7 +17,7 @@ client.on('message', message => {
   }
 
   // --- PROFANE WORD DETECTION ---
-var msg_pure = message.content.replace(/[^a-zA-Z ]/g, "")
+var msg_pure = message.content.replace(/[^a-zA-Z0-9 ]/g, "")
 for (let i = 0; i < profaneWords.length; i++) {
   const elem = profaneWords[i];
   const message_split = msg_pure.split(" ");
