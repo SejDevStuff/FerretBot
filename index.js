@@ -29,6 +29,7 @@ for (let i = 0; i < profaneWords.length; i++) {
         .setColor('#FF0000')
         .setTitle('Profanity Detected!')
         .setDescription(`Woah, **${message.author.username}**! This is a family friendly server, don't use that language or you may get muted!`)
+        .setFooter('I am still learning! If you feel wrongly judged, please PM one of the server admins and inform them of what you typed.')
       message.channel.send(warning);
       return;
     }
@@ -38,6 +39,7 @@ for (let i = 0; i < profaneWords.length; i++) {
         .setColor('#FF0000')
         .setTitle('Profanity Detected!')
         .setDescription(`Woah, **${message.author.username}**! This is a family friendly server, don't use that language or you may get muted!`)
+        .setFooter('I am still learning! If you feel wrongly judged, please PM one of the server admins and inform them of what you typed.')
       message.channel.send(warning);
       return;
     }
@@ -47,6 +49,7 @@ for (let i = 0; i < profaneWords.length; i++) {
         .setColor('#FF0000')
         .setTitle('Profanity Detected!')
         .setDescription(`Woah, **${message.author.username}**! This is a family friendly server, don't use that language or you may get muted!`)
+        .setFooter('I am still learning! If you feel wrongly judged, please PM one of the server admins and inform them of what you typed.')
       message.channel.send(warning);
       return;
     }
