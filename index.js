@@ -22,7 +22,17 @@ client.on('message', message => {
 I am developed by **TuxThePenguin#5615** for 87Ferrets. Github: https://github.com/87FerretsDev/FerretBot
 
 **Things I do:**
-I am a fun and moderation bot.
+I am a fun and moderation bot and I make sure all 87Ferrets servers are kept clean as well as keeping their users entertained!
+
+**What do I moderate?**
+I watch for users using any foul language and I take action to punish them accordingly, this includes a mute after more than 2 instances of the user using foul language
+
+**My Commands:**
+My command prefix is **~**
+
+**~help**   = Shows this help.
+
+*End of document*
     `);
   }
 
