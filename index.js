@@ -32,7 +32,7 @@ My command prefix is **~**
 
 **~help**   = Shows this help.
 
-*End of document*
+*I am offline for 8-9 days each month to give my developers time to work on important updates.*
     `);
   }
 
