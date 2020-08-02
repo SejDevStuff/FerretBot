@@ -1,5 +1,8 @@
-// This bot is designed by 87Ferrets
-// --> Developed by TuxThePenguin#5615 who is a developer for 87Ferrets
+/* This bot is designed by 87Ferrets
+ * --> Developed by TuxThePenguin#5615 who is a developer for 87Ferrets
+ * Current Version: 1.5.0
+ * Last Updated: 02/08/2020
+ */
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
@@ -10,10 +13,20 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+
+  function help() {
+    message.channel.send("===> Help is being developed <===");
+  }
+
   if(message.author.bot) return;
-  // --- HELP COMMAND ---
-  if (message.content === '~help') {
-    message.author.send(":wave: Hey! I am Ferret. I am being re-written in JS for better performance so expect some commands not to work. \n\n**Who am I?**\nI am a Discord bot developed by *Tux The Penguin#5615* for 87Ferrets Servers. I am both a moderation and a fun bot!\n\n**What do I moderate?**\nI watch for users using profane language. I then take action to punish the user.\n\n**What are my commands?**\nI am still being developed, so no commands yet...");
+
+  if (message.content.startsWith(prefix)) {
+    var msg_pure = message.content.replace(/[^a-zA-Z0-9 ]/g, "");
+    try {
+      window["msg_pure"]();
+    } catch (error) {
+      message.channel.send("Error: Command not found!");
+    }
   }
 
   // --- PROFANE WORD DETECTION ---
