@@ -7,6 +7,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const profaneWords = require('./moderation_assets/profane.json');
+var prefix = "~";
 
 client.on('ready', () => {
   console.log(`Successfully logged in as Ferret`);
