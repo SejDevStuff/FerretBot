@@ -15,7 +15,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-  function help() {
+  global.help = function help() {
     message.channel.send("===> Help is being developed <===");
   }
 
