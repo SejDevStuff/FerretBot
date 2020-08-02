@@ -16,7 +16,9 @@ client.on('ready', () => {
 client.on('message', message => {
 
   global.help = function help() {
-    message.channel.send("===> Help is being developed <===");
+    message.channel.send(`
+:wave: Hello! I am Ferret!
+    `);
   }
 
   if(message.author.bot) return;
@@ -26,12 +28,12 @@ client.on('message', message => {
     try {
       global[msg_pure]();
     } catch (error) {
-      message.channel.send("Error: Command not found! *Developer Information (this is only here for BETA versions): " + error + "*");
+      message.channel.send("**Error: Command not found!** *Developer Information (this is only here for BETA versions): ``" + error + "``*");
     }
   }
 
   // --- PROFANE WORD DETECTION ---
-var msg_pure = message.content.replace(/[^a-zA-Z0-9 ]/g, "")
+var msg_pure = message.content.replace(/[^a-zA-Z0-9 ]/g, "").toString().trim();
 for (let i = 0; i < profaneWords.length; i++) {
   const elem = profaneWords[i];
   const message_split = msg_pure.split(" ");
