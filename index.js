@@ -26,7 +26,7 @@ client.on('message', message => {
     try {
       window["msg_pure"]();
     } catch (error) {
-      message.channel.send("Error: Command not found!");
+      message.channel.send("Error: Command not found! *Developer Information (this is only here for BETA versions): " + error + "*");
     }
   }
 
