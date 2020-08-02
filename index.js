@@ -22,9 +22,9 @@ client.on('message', message => {
   if(message.author.bot) return;
 
   if (message.content.startsWith(prefix)) {
-    var msg_pure = message.content.replace(/[^a-zA-Z0-9 ]/g, "");
+    var msg_pure = message.content.replace(/[^a-zA-Z0-9 ]/g, "").toString().trim();
     try {
-      window["msg_pure"]();
+      global[msg_pure]();
     } catch (error) {
       message.channel.send("Error: Command not found! *Developer Information (this is only here for BETA versions): " + error + "*");
     }
