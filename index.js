@@ -16,13 +16,13 @@ client.on('ready', () => {
 client.on('message', message => {
 
   global.help = function help() {
-    message.channel.send(message.author.mention + ', check your DMs!')
+    message.channel.send("<@" + message.author.id + ">, check your DMs!")
     message.author.send(`
 :wave: Hello! I am Ferret!
 I am developed by **TuxThePenguin#5615** for 87Ferrets. Github: https://github.com/87FerretsDev/FerretBot
 
 **Things I do:**
-I am a fun and moderation bot. 
+I am a fun and moderation bot.
     `);
   }
 
