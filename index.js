@@ -1,7 +1,7 @@
 /* This bot is designed by 87Ferrets
  * --> Developed by TuxThePenguin#5615 who is a developer for 87Ferrets
  * Current Version: 1.5.0
- * Last Updated: 02/08/2020
+ * Last Updated: 05/08/2020
  */
 
 const Discord = require('discord.js');
