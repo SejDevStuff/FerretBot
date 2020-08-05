@@ -2,6 +2,7 @@
  * --> Developed by TuxThePenguin#5615 who is a developer for 87Ferrets
  * Current Version: 1.5.0
  * Last Updated: 05/08/2020
+ * (c) Copyright 2020 87FerretsDev
  */
 
 const Discord = require('discord.js');
