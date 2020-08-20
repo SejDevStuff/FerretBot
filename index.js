@@ -8,6 +8,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const profaneWords = require('./moderation_assets/profane.json');
+const words_random = require('random-words');
 const pgservers = require('./moderation_assets/pg_servers.json');
 var prefix = "~";
 
@@ -49,6 +50,16 @@ My command prefix is **~**
     }
   }
 
+// DETECT IMPERSONATION OF USERS
+if (message.member.displayname == "TuxThePenguin") {
+  if (message.member.id == 691977470366187610) {
+    return;
+  } else {
+    const word1 = words_random();
+    const word2 = words_random();
+    message.member.setNickname(word1 + ' ' + word2);
+  }
+}
   // --- PROFANE WORD DETECTION ---
 for (let i = 0; i < pgservers.length; i++) {
     const elem = pgservers[i];
