@@ -51,33 +51,51 @@ My command prefix is **~**
   }
 
 // DETECT IMPERSONATION OF USERS
-if (message.member.displayname == "Tux The Penguin") {
-  if (message.member.id == 691977470366187610) {
+if (message.author.displayname == "Tux The Penguin") {
+  if (message.author.id == 691977470366187610) {
     return;
   } else {
     const word1 = words_random();
     const word2 = words_random();
-    message.member.setNickname(word1 + ' ' + word2);
+    message.author.setNickname(word1 + ' ' + word2);
+    message.channel.send('<@' + message.author.id + '>');
+    const warning = new Discord.MessageEmbed()
+      .setColor('#FF0000')
+      .setTitle('Impersonation!')
+      .setDescription(`Hello, **${message.author.displayname}**. You have tried to impersonate Tux The Penguin so you have been given a different name. Be warned, continuous impersonation may result in a ban!`)
+    message.channel.send(warning);
   }
 }
 
-if (message.member.displayname == "TuxThePenguin") {
-  if (message.member.id == 691977470366187610) {
+if (message.author.displayname == "TuxThePenguin") {
+  if (message.author.id == 691977470366187610) {
     return;
   } else {
     const word1 = words_random();
     const word2 = words_random();
-    message.member.setNickname(word1 + ' ' + word2);
+    message.author.setNickname(word1 + ' ' + word2);
+    message.channel.send('<@' + message.author.id + '>');
+    const warning = new Discord.MessageEmbed()
+      .setColor('#FF0000')
+      .setTitle('Impersonation!')
+      .setDescription(`Hello, **${message.author.displayname}**. You have tried to impersonate TuxThePenguin so you have been given a different name. Be warned, continuous impersonation may result in a ban!`)
+    message.channel.send(warning);
   }
 }
 
-if (message.member.displayname == "!-a-ferret-!") {
-  if (message.member.id == 464469755634647041) {
+if (message.author.displayname == "!-a-ferret-!") {
+  if (message.author.id == 464469755634647041) {
     return;
   } else {
     const word1 = words_random();
     const word2 = words_random();
-    message.member.setNickname(word1 + ' ' + word2);
+    message.author.setNickname(word1 + ' ' + word2);
+    message.channel.send('<@' + message.author.id + '>');
+    const warning = new Discord.MessageEmbed()
+      .setColor('#FF0000')
+      .setTitle('Impersonation!')
+      .setDescription(`Hello, **${message.author.displayname}**. You have tried to impersonate !-a-ferret-! so you have been given a different name. Be warned, continuous impersonation may result in a ban!`)
+    message.channel.send(warning);
   }
 }
   // --- PROFANE WORD DETECTION ---
