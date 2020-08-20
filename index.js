@@ -51,8 +51,28 @@ My command prefix is **~**
   }
 
 // DETECT IMPERSONATION OF USERS
+if (message.member.displayname == "Tux The Penguin") {
+  if (message.member.id == 691977470366187610) {
+    return;
+  } else {
+    const word1 = words_random();
+    const word2 = words_random();
+    message.member.setNickname(word1 + ' ' + word2);
+  }
+}
+
 if (message.member.displayname == "TuxThePenguin") {
   if (message.member.id == 691977470366187610) {
+    return;
+  } else {
+    const word1 = words_random();
+    const word2 = words_random();
+    message.member.setNickname(word1 + ' ' + word2);
+  }
+}
+
+if (message.member.displayname == "!-a-ferret-!") {
+  if (message.member.id == 464469755634647041) {
     return;
   } else {
     const word1 = words_random();
